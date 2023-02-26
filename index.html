@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ol,
+        ul {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="container">
+        <div class="header fontPadrao">
+            <h1>Cadastro Lojas</h1>
+        </div>
+        <form class="cadastro" action="api.flit.com.br/submeterDados">
+            <div class="divText"><label for="nomeLoja">
+                    <h2>Nome</h2>
+                </label>
+                <input class="textInput" id="nomeLoja" type="text" name="nome" placeholder="Ex: SpecialDog" />
+            </div>
+            <div class="divText">
+                <label for="enderecoLoja">
+                    <h2>Endereço</h2>
+                </label>
+                <input class="textInput" id="enderecoLoja" type="text" name="endereco"
+                    placeholder="Ex: Rua Salgado, 60" />
+            </div>
+            <section class="diasFuncionamentos">
+                <div class="divTitle fontPadrao">
+                    <h2>Dias de Funcionamento</h2>
+                </div>
+                <div class="check">
+                    <label class="label" for="box1">Domingo</label>
+                    <input type="checkbox" id="box1" name="Domingo">
+                </div>
+                <div class="check">
+                    <label class="label" for="box2">Segunda</label>
+                    <input type="checkbox" id="box2" name="Segunda">
+                </div>
+                <div class="check">
+                    <label class="label" for="box3">Terça</label>
+                    <input type="checkbox" id="box3" name="Terca">
+                </div>
+                <div class="check">
+                    <label class="label" for="box4">Quarta</label>
+                    <input type="checkbox" id="box4" name="Quarta">
+                </div>
+                <div class="check">
+                    <label class="label" for="box5">Quinta</label>
+                    <input type="checkbox" id="box5" name="Quinta">
+                </div>
+                <div class="check">
+                    <label class="label" for="box6">Sexta</label>
+                    <input type="checkbox" id="box6" name="Sexta">
+                </div>
+                <div class="check">
+                    <label class="label" for="box7">Sábado</label>
+                    <input type="checkbox" id="box7" name="Sabado">
+                </div>
+            </section>
+            <section class="horarioFuncionamento">
+                <section class="divTitle fontPadrao">
+                    <h2>Horário de Funcionamento</h2>
+                </section>
+                <div class="horario fontPadrao">
+                    <label for="aberto">Horário de Abertura</label>
+                    <input class="inputHorario" type="time" id="aberto" value="horarioAbertura">
+                </div>
+                <div class="horario fontPadrao">
+                    <label for="fechado">Horário de Fechamento</label>
+                    <input type="time" class="inputHorario" id="fechado" value="horarioFechamento">
+                </div>
+            </section>
+            <div class="botao">
+                <section class="enviar">
+                    <button class="button" type="submit" id="button" name="enviar">Enviar Formulário</button>
+                </section>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
