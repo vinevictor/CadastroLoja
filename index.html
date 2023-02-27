@@ -53,47 +53,50 @@
             <h1>Cadastro Lojas</h1>
         </div>
         <form class="cadastro" action="api.flit.com.br/submeterDados">
-            <div class="divText"><label for="nomeLoja">
-                    <h2>Nome</h2>
-                </label>
-                <input class="textInput" id="nomeLoja" type="text" name="nome" placeholder="Ex: SpecialDog" />
-            </div>
-            <div class="divText">
-                <label for="enderecoLoja">
-                    <h2>Endereço</h2>
-                </label>
-                <input class="textInput" id="enderecoLoja" type="text" name="endereco"
-                    placeholder="Ex: Rua Salgado, 60" />
-            </div>
+            <section class="cadastroNomeLoja">
+                <div class="divText" style="order: 1"><label for="nomeLoja">
+                        <h2>Nome</h2>
+                    </label>
+                    <input class="textInput" id="nomeLoja" type="text" name="nome" placeholder="Ex: SpecialDog" />
+                </div>
+                <div class="divText" style="order: 2">
+                    <label for="enderecoLoja">
+                        <h2>Endereço</h2>
+                    </label>
+                    <input class="textInput" id="enderecoLoja" type="text" name="endereco"
+                        placeholder="Ex: Rua Salgado, 60" />
+                </div>
+            </section>
+
             <section class="diasFuncionamentos">
                 <div class="divTitle fontPadrao">
                     <h2>Dias de Funcionamento</h2>
                 </div>
-                <div class="check">
+                <div class="check" style="order: 1">
                     <label class="label" for="box1">Domingo</label>
                     <input type="checkbox" id="box1" name="Domingo">
                 </div>
-                <div class="check">
+                <div class="check" style="order: 2">
                     <label class="label" for="box2">Segunda</label>
                     <input type="checkbox" id="box2" name="Segunda">
                 </div>
-                <div class="check">
+                <div class="check" style="order: 3">
                     <label class="label" for="box3">Terça</label>
                     <input type="checkbox" id="box3" name="Terca">
                 </div>
-                <div class="check">
+                <div class="check" style="order: 4">
                     <label class="label" for="box4">Quarta</label>
                     <input type="checkbox" id="box4" name="Quarta">
                 </div>
-                <div class="check">
+                <div class="check" style="order: 5">
                     <label class="label" for="box5">Quinta</label>
                     <input type="checkbox" id="box5" name="Quinta">
                 </div>
-                <div class="check">
+                <div class="check" style="order: 6">
                     <label class="label" for="box6">Sexta</label>
                     <input type="checkbox" id="box6" name="Sexta">
                 </div>
-                <div class="check">
+                <div class="check" style="order: 7">
                     <label class="label" for="box7">Sábado</label>
                     <input type="checkbox" id="box7" name="Sabado">
                 </div>
@@ -102,11 +105,11 @@
                 <section class="divTitle fontPadrao">
                     <h2>Horário de Funcionamento</h2>
                 </section>
-                <div class="horario fontPadrao">
+                <div class="horario fontPadrao" style="order: 1">
                     <label for="aberto">Horário de Abertura</label>
                     <input class="inputHorario" type="time" id="aberto" value="horarioAbertura">
                 </div>
-                <div class="horario fontPadrao">
+                <div class="horario fontPadrao" style="order: 2">
                     <label for="fechado">Horário de Fechamento</label>
                     <input type="time" class="inputHorario" id="fechado" value="horarioFechamento">
                 </div>
